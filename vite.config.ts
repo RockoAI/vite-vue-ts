@@ -7,6 +7,6 @@ export default defineConfig({
   plugins: [vue(), tailwindcss()],
   server: {
     port: 3000,
-    allowedHosts: [`${process.env.FLY_MACHINE_ID}.rockoai.dev`],
+    allowedHosts: [`${process.env.FLY_APP_NAME}-${process.env.FLY_MACHINE_ID}.rockoai.dev`],
   },
 });
